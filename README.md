@@ -1,6 +1,6 @@
 # Auth API
 
-<!-- Insert short overview here, 1 to 3 sentences -->
+This API has full CRUD on two route types `/api/v1` and `/api/v2`. v2 has roles, authentication, and authorization for preventing tampering. The which you can CRUD with are are `food` and `clothes`.
 
 <!-- Insert links to deploy(s) here -->
 
