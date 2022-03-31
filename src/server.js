@@ -18,8 +18,9 @@ app.use(express.urlencoded({ extended: true }));
 // middleware
 const logger = require('./middleware/logger');
 // routes
-const v1Routes = require('./routes/v1');
 const authRoutes = require('./auth/routes');
+const v1Routes = require('./routes/v1');
+const v2Routes = require('./routes/v2');
 // error-handlers
 const handle500 = require('./error-handlers/500');
 const handle404 = require('./error-handlers/404');
@@ -27,8 +28,9 @@ const handle404 = require('./error-handlers/404');
 // Use routers/middleware/error-handlers
 app.use(logger);
 
-app.use(v1Routes);
 app.use(authRoutes);
+app.use(v1Routes);
+app.use(v2Routes);
 
 app.use(handle404);
 app.use(handle500);
