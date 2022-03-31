@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 // Import API modules
 
 // middleware
-const logger = require('../api-server/src/middleware/logger');
+const logger = require('./middleware/logger');
 // routes
 const v1Routes = require('./routes/v1');
 const authRoutes = require('./auth/routes');
@@ -24,6 +24,7 @@ const authRoutes = require('./auth/routes');
 const handle500 = require('./error-handlers/500');
 const handle404 = require('./error-handlers/404');
 
+// Use routers/middleware/error-handlers
 app.use(logger);
 
 app.use(v1Routes);
