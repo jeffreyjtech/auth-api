@@ -1,18 +1,17 @@
-<!--  This is a template repo -->
-# my project
+# Auth API
 
 <!-- Insert short overview here, 1 to 3 sentences -->
 
 <!-- Insert links to deploy(s) here -->
-[Deployed API](https://my-server.myhost.scam)
+
+## UML Diagram
 
 <!-- Insert UML diagram here -->
-![UML Diagram](./assets/lab-uml.jpg)
 
 ## Installation
 
-1. Clone from this repo `git clone <GIT URL>`
-2. `cd` into `<REPO NAME>`
+1. Clone from this repo `git clone https://github.com/jeffreyjtech/auth-api.git`
+2. `cd` into `auth-api`
 3. Run `npm install`
 4. Optionally, create an .env file with variable `PORT` to assign your preferred port number. The default `PORT` is `3000`.
 
@@ -34,7 +33,7 @@ After installation, run `npm start`.
 
 <!-- Route documentation goes here -->
 
-#### `/routeA`
+<!-- #### `/routeA` -->
 
 <!-- Sample for an endpoint below. Refer to sample-README.md for more -->
 <!-- - GET : `/magikarp[/:id]`
@@ -47,7 +46,7 @@ After installation, run `npm start`.
 
 ### Schemas
 
-#### `modelA` schema:
+<!-- #### `modelA` schema: -->
 
 <!-- 
 ```js
